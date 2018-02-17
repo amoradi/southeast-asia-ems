@@ -23,12 +23,12 @@ Metalsmith(__dirname)
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
-  .source('./src')
+  .source('./src/pages')
   .destination('./build')
   .clean(false)
   .use(pug(pugOptions))
-  .use(permalinks())
   .use(layouts({
+    directory: './src/layouts',
     engine: 'pug'
   }))
   .build(function(err, files) {
