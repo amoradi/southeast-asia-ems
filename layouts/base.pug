@@ -1,0 +1,18 @@
+doctype html
+html
+  block head
+    include ../partials/head.pug
+  body
+    include ../partials/header.pug
+    .Page
+      .PageContent
+        block leftPeriphery
+          include ../partials/left-periphery.pug
+        .MainContent
+          h1= title
+          block content
+            include ../partials/main-content.pug
+        block rightPeriphery
+          include ../partials/right-periphery.pug
+      block footer
+        include ../partials/footer.pug
