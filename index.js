@@ -3,6 +3,7 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var permalinks = require('metalsmith-permalinks');
 var pug  = require('metalsmith-pug');
+var sass = require('metalsmith-sass');
 
 const pugOptions = {
   pretty: false,
@@ -30,6 +31,11 @@ Metalsmith(__dirname)
   .use(layouts({
     directory: './src/layouts',
     engine: 'pug'
+  }))
+  .source('./src/scss')
+  .use(sass({
+    outputStyle: "expanded",
+    outputDir: 'css/'
   }))
   .build(function(err, files) {
     if (err) { throw err; }
