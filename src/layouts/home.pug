@@ -2,12 +2,12 @@ extends base.pug
 
 block content
   .SidebarLayout
-  block menu
-    .Menu
-      ul
-        each val in menuItems
-          li= val
-  
+    block menu
+      .Menu
+        ul
+          each val in menuItems
+            li= val
+  include ../partials/main-content.pug
   
 
 

@@ -4,6 +4,7 @@ var layouts = require('metalsmith-layouts');
 var permalinks = require('metalsmith-permalinks');
 var pug  = require('metalsmith-pug');
 var sass = require('metalsmith-sass');
+var assets = require('metalsmith-assets');
 
 const pugOptions = {
   pretty: false,
@@ -16,6 +17,16 @@ const pugOptions = {
     foo: block => block.replace('foo', 'bar')
   }
 }
+
+Metalsmith(__dirname)
+  .source('./src/scss')
+  .use(sass({
+    outputStyle: "expanded",
+    outputDir: 'css/'
+  }))
+  .build(function(err, files) {
+    if (err) { throw err; }
+  });
 
 Metalsmith(__dirname)
   .metadata({
@@ -32,10 +43,9 @@ Metalsmith(__dirname)
     directory: './src/layouts',
     engine: 'pug'
   }))
-  .source('./src/scss')
-  .use(sass({
-    outputStyle: "expanded",
-    outputDir: 'css/'
+  .use(assets({
+    source: './src/assets',
+    destination: './assets'
   }))
   .build(function(err, files) {
     if (err) { throw err; }

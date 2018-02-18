@@ -1,3 +1,8 @@
+.Body {
+  background: url("../assets/background.jpeg") center/cover no-repeat;
+  background-attachment: fixed;
+}
+
 .Header {
   background-color: "yellow";
 }
