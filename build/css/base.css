@@ -23,7 +23,7 @@ html {
 }
 
 .Navigation-body {
-  max-width: 1080px;
+  width: 1080px;
   margin: 0 auto;
 }
 
@@ -57,22 +57,115 @@ html {
 
 .LogoBar-body {
   background-color: white;
-  max-width: 1080px;
+  width: 1080px;
   margin: 0 auto;
   height: 125px;
 }
 
 .PageContent {
   color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .Page {
   background-color: #ffc734;
-  max-width: 1080px;
-  margin: 0 auto;
+  width: 1080px;
+  margin: 0 auto 6rem;
   overflow: hidden;
 }
 
-div {
-  color: red;
+.Periphery-image {
+  width: 120px;
+}
+
+.Periphery-link {
+  text-decoration: none;
+  display: block;
+  padding-top: 1rem;
+}
+
+.Footer {
+  background-color: #fd2f18;
+  color: white;
+  padding: 2rem;
+}
+
+.MainContent {
+  box-sizing: border-box;
+  width: 810px;
+  padding: 0 2rem;
+}
+
+.MainContent-content {
+  width: 675px;
+}
+
+.MainContent-date {
+  color: #fd2f18;
+}
+
+.MainContent-issue {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.MainContent-issueSidebar {
+  padding-left: 2rem;
+}
+
+.MainContent-issueImage {
+  width: 140px;
+}
+
+.MainContent-more {
+  color: #fd2f18;
+}
+
+.MainContent-barrier {
+  border-top: 2px solid white;
+  padding-top: 2rem;
+}
+
+.MainContent .is-hidden {
+  display: none;
+}
+
+.Heading {
+  color: #222;
+  font-weight: 800;
+  font-size: 28px;
+  border-bottom: 4px solid white;
+  padding-bottom: 1rem;
+}
+
+.Heading-secondary {
+  margin-top: 0;
+  color: #222;
+  font-weight: 800;
+}
+
+.Menu {
+  width: 135px;
+}
+
+.Menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Menu-listItem {
+  margin-bottom: 1rem;
+}
+
+.Menu-link {
+  color: #fd2f18;
+  font-weight: 600;
+}
+
+.SidebarLayout {
+  display: flex;
 }

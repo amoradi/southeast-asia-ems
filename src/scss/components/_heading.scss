@@ -1,0 +1,13 @@
+.Heading {
+  color: $black;
+  font-weight: 800;
+  font-size: $heading-font;
+  border-bottom: $thick-border solid $white;
+  padding-bottom: 1rem;
+
+  &-secondary {
+    margin-top: 0;
+    color: $black;
+    font-weight: 800;
+  }
+}

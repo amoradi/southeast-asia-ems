@@ -4,10 +4,11 @@ block content
   .SidebarLayout
     block menu
       .Menu
-        ul
-          each val in menuItems
-            li= val
-  include ../partials/main-content.pug
+        ul(class='Menu-list')
+          each item in menuItems
+            li(class='Menu-listItem')
+              a(class='Menu-link', href=item.link)= item.name
+    include ../partials/main-content.pug
   
 
 

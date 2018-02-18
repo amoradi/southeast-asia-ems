@@ -1,0 +1,11 @@
+.Periphery {
+  &-image {
+    width: $page-width / 9;
+  }
+
+  &-link {
+    text-decoration: none;
+    display: block;
+    padding-top: 1rem;
+  }
+}

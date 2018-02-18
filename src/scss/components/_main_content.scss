@@ -1,0 +1,41 @@
+.MainContent {
+  box-sizing: border-box;
+  width: ($page-width / 8) * 6;
+  padding: 0 2rem;
+
+  &-content {
+    width: (($page-width / 8) * 6) * (5/6);
+  }
+  
+  &-date {
+    color: $coral;
+  }
+
+  &-issue {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  &-issueSidebar {
+    padding-left: 2rem;
+  }
+
+  &-issueImage {
+    width: 140px;
+  }
+
+  &-more {
+    color: $coral;
+  }
+
+  &-barrier {
+    border-top: 2px solid $white;
+    padding-top: 2rem;
+  }
+
+  .is-hidden {
+    display: none;
+  }
+}
+
