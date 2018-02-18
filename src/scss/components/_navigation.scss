@@ -28,6 +28,8 @@
     padding: 0 1rem;
     text-transform: uppercase;
     font-size: $base-font;
+    font-weight: 500;
+    letter-spacing: 0.5px;
   }
 
   &-link.is-active {

@@ -47,6 +47,8 @@ html {
   padding: 0 1rem;
   text-transform: uppercase;
   font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .Navigation-link.is-active {
@@ -79,7 +81,7 @@ html {
 .Page {
   background-color: #ffc734;
   width: 1080px;
-  margin: 0 auto 6rem;
+  margin: 0 auto 10rem;
   overflow: hidden;
 }
 
