@@ -2,14 +2,14 @@
 title: Current Issue
 layout: home.pug
 menuItems: [
-  { name: 'foo', link: '#test' },
+  { name: 'YAMAHA', link: '#alf-auto-loading' },
   { name: 'foo', link: '#test' },
   { name: 'foo', link: '#test' }
 ]
 menuItem: 'current issue'
 ---
 
-.MainContent-issue
+.MainContent-issue(id='alf-auto-loading')
   .MainContent-issueBody
     h2(class='Heading-secondary') YAMAHA Launches Revolutionary ALF Auto-Loading Feeder
     p(class='MainContent-date') Issue 123 | Sunday, February 18th, 2018
@@ -25,7 +25,7 @@ menuItem: 'current issue'
  
       a(class='MainContent-less is-hidden') read less 
   .MainContent-issueSidebar
-    img(src='./assets/fake-home.png', class='MainContent-issueImage')
+    img(src='./assets/ALF_350dpi_1619×2000.jpg', class='MainContent-issueImage')
 .MainContent-barrier
 .MainContent-issue
   .MainContent-issueBody
