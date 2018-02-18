@@ -59,6 +59,11 @@
     opacity: 1;
   }
 
+  &-issue.is-animating p.is-hidden,
+  &-issue.is-open p.is-hidden {
+    display: block;
+  }
+
   &-issue.is-animating  &-less,
   &-issue.is-open &-less {
     display: block;
@@ -82,6 +87,12 @@
     
   &-copy {
     margin-top: 0.5rem;
+  }
+
+  &-emphasis {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
   }
 }
 

@@ -164,6 +164,11 @@ html {
   opacity: 1;
 }
 
+.MainContent-issue.is-animating p.is-hidden,
+.MainContent-issue.is-open p.is-hidden {
+  display: block;
+}
+
 .MainContent-issue.is-animating .MainContent-less,
 .MainContent-issue.is-open .MainContent-less {
   display: block;
@@ -191,6 +196,12 @@ html {
 
 .MainContent-copy {
   margin-top: 0.5rem;
+}
+
+.MainContent-emphasis {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 @keyframes fadein {
