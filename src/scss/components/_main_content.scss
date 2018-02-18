@@ -9,6 +9,7 @@
   
   &-date {
     color: $coral;
+    margin: 0.5rem 0;
   }
 
   &-issue {
@@ -25,13 +26,29 @@
     width: 140px;
   }
 
-  &-more {
+  &-more,
+  &-less {
     color: $coral;
+    cursor: pointer;
+  }
+
+  &-issue.is-open &-more,
+  &-issue .is-hidden {
+    display: none;
+  }
+
+  &-issue.is-open .is-hidden {
+    display: block;
   }
 
   &-barrier {
     border-top: 2px solid $white;
     padding-top: 2rem;
+    margin-top: 1rem;
+  }
+    
+  &-copy {
+    margin-top: 0.5rem;
   }
 
   .is-hidden {

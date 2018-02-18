@@ -110,6 +110,7 @@ html {
 
 .MainContent-date {
   color: #fd2f18;
+  margin: 0.5rem 0;
 }
 
 .MainContent-issue {
@@ -126,13 +127,28 @@ html {
   width: 140px;
 }
 
-.MainContent-more {
+.MainContent-more, .MainContent-less {
   color: #fd2f18;
+  cursor: pointer;
+}
+
+.MainContent-issue.is-open .MainContent-more,
+.MainContent-issue .is-hidden {
+  display: none;
+}
+
+.MainContent-issue.is-open .is-hidden {
+  display: block;
 }
 
 .MainContent-barrier {
   border-top: 2px solid white;
   padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.MainContent-copy {
+  margin-top: 0.5rem;
 }
 
 .MainContent .is-hidden {
@@ -145,10 +161,11 @@ html {
   font-size: 28px;
   border-bottom: 4px solid white;
   padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .Heading-secondary {
-  margin-top: 0;
+  margin: 0 0 0.5rem;
   color: #222;
   font-weight: 800;
 }
