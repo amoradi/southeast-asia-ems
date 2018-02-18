@@ -29,4 +29,10 @@
     text-transform: uppercase;
     font-size: $base-font;
   }
+
+  &-link.is-active {
+    background-color: $yellow;
+    border-bottom: 0.5rem $yellow solid;
+    color: $black;
+  }
 }

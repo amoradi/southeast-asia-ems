@@ -48,6 +48,12 @@ html {
   font-size: 13px;
 }
 
+.Navigation-link.is-active {
+  background-color: #ffc734;
+  border-bottom: 0.5rem #ffc734 solid;
+  color: #222;
+}
+
 .LogoBar {
   background-color: #ffc734;
   height: 125px;
