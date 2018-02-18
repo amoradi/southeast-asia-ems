@@ -1,14 +1,76 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .Body {
   background: url("../assets/background.jpeg") center/cover no-repeat;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .Header {
-  background-color: "yellow";
+  background-color: white;
+}
+
+.Navigation {
+  background-color: #fd2f18;
+  height: 60px;
+  margin: 0.4rem 0 0;
+  border-bottom: 0.4rem solid white;
+}
+
+.Navigation-body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.Navigation-list {
+  padding: 0;
+  margin: 0;
+}
+
+.Navigation-listItem {
+  list-style-type: none;
+  display: inline;
+}
+
+.Navigation-link {
+  color: white;
+  text-decoration: none;
+  height: 60px;
+  align-items: center;
+  display: inline-flex;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.LogoBar {
+  background-color: #ffc734;
+  height: 125px;
+  margin: 0;
+  border-top: 0.4rem solid white;
+}
+
+.LogoBar-body {
+  background-color: white;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 125px;
+}
+
+.PageContent {
+  color: #222;
 }
 
 .Page {
-  width: 1080px;
+  background-color: #ffc734;
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 div {

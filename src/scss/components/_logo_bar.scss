@@ -1,0 +1,13 @@
+.LogoBar {
+  background-color: $yellow;
+  height: $logo-height;
+  margin: 0;
+  border-top: $border-height solid $white;
+
+  &-body {
+    background-color: $white;
+    max-width: $page-width;
+    margin: 0 auto;
+    height: $logo-height;
+  }
+}

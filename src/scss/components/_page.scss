@@ -1,3 +1,6 @@
 .Page {
-  width: $page-width;
+  background-color: $yellow;
+  max-width: $page-width;
+  margin: 0 auto;
+  overflow: hidden;
 }
