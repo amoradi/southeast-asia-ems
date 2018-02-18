@@ -109,6 +109,7 @@ html {
 
 .MainContent-content {
   width: 675px;
+  padding-bottom: 4rem;
 }
 
 .MainContent-date {
