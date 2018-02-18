@@ -5,7 +5,8 @@ var permalinks = require('metalsmith-permalinks');
 var pug  = require('metalsmith-pug');
 var sass = require('metalsmith-sass');
 var assets = require('metalsmith-assets');
-
+var uglifyjs = require("metalsmith-uglifyjs");
+var babel = require('metalsmith-babel');
 const pugOptions = {
   pretty: false,
 
@@ -17,6 +18,27 @@ const pugOptions = {
     foo: block => block.replace('foo', 'bar')
   }
 }
+
+const babelOptions = {
+  presets: ['env']
+};
+ 
+Metalsmith(__dirname)
+  .source('./src/js/')
+  .destination('./build/js')
+  .use(babel(babelOptions))
+  .use(uglifyjs({
+      uglifyOptions: {
+        mangle: true,
+        compress: {
+        unused: false,
+        warnings: true
+      }
+    }
+  }))
+  .build(function(err, files) {
+    if (err) { throw err; }
+  });
 
 Metalsmith(__dirname)
   .source('./src/scss')
