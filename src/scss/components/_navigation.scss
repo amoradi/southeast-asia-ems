@@ -4,6 +4,10 @@
   margin: $border-height 0 0;
   border-bottom: $border-height solid $white;
 
+  li:first-child &-link {
+    border-left: 1px solid $white;
+  }
+
   &-body {
     width: $page-width;
     margin: 0 auto;
@@ -12,11 +16,13 @@
   &-list {
     padding: 0;
     margin: 0;
+    overflow: hidden;
   }
 
   &-listItem {
     list-style-type: none;
     display: inline;
+    float: left;
   }
 
   &-link {
@@ -24,12 +30,13 @@
     text-decoration: none;
     height: $navigation-height;
     align-items: center;
-    display: inline-flex;
+    display: flex;
     padding: 0 1rem;
     text-transform: uppercase;
     font-size: $base-font;
     font-weight: 500;
     letter-spacing: 0.5px;
+    border-right: 1px solid $white;
   }
 
   &-link.is-active {
