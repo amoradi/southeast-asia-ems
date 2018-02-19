@@ -12,6 +12,11 @@ html {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.u-float-right {
+  float: right;
+  padding: 1rem;
+}
+
 .Header {
   background-color: white;
 }
@@ -246,6 +251,20 @@ li:first-child .Navigation-link {
   display: block;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
+}
+
+.MainContent-box {
+  width: 300px;
+  line-height: 1.4;
+}
+
+.MainContent-personImage {
+  float: right;
+  padding: 1rem;
+  border: #fd2f18 5px solid;
+  border-radius: 50%;
+  padding: 0;
+  width: 120px;
 }
 
 @keyframes fadein {
