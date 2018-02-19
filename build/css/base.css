@@ -23,7 +23,7 @@ html {
 
 .Navigation {
   background-color: #fd2f18;
-  height: 60px;
+  height: 50px;
   margin: 0.4rem 0 0;
   border-bottom: 0.4rem solid white;
 }
@@ -52,12 +52,12 @@ li:first-child .Navigation-link {
 .Navigation-link {
   color: white;
   text-decoration: none;
-  height: 60px;
+  height: 50px;
   align-items: center;
   display: flex;
   padding: 0 1rem;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-right: 1px solid white;
@@ -84,7 +84,7 @@ li:first-child .Navigation-link {
 }
 
 .LogoBar-logo {
-  margin: 1.25rem 1rem;
+  margin: 1.25rem 2rem;
   width: 300px;
 }
 
@@ -178,6 +178,7 @@ li:first-child .Navigation-link {
 }
 
 .MainContent-more, .MainContent-less {
+  text-decoration: none;
   color: #fd2f18;
   cursor: pointer;
 }

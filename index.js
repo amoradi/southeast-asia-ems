@@ -8,10 +8,10 @@ var assets = require('metalsmith-assets');
 var uglifyjs = require("metalsmith-uglifyjs");
 var babel = require('metalsmith-babel');
 const pugOptions = {
-  pretty: false,
-
+  pretty: true,
+  basedir: __dirname,
   locals: {
-    postName: 'good post name'
+    postName: 'good post name',
   },
 
   filters: {
@@ -63,7 +63,8 @@ Metalsmith(__dirname)
   .use(pug(pugOptions))
   .use(layouts({
     directory: './src/layouts',
-    engine: 'pug'
+    engine: 'pug',
+    basedir: __dirname
   }))
   .use(assets({
     source: './src/assets',
