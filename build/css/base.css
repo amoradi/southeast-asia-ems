@@ -8,7 +8,7 @@ html {
   background: url("../assets/ems-bkgr.jpg") center/cover no-repeat;
   background-attachment: fixed;
   margin: 0;
-  padding: 0 0 4rem;
+  padding: 0 0 8rem;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -111,6 +111,35 @@ li:first-child .Navigation-link {
   background-color: #fd2f18;
   color: white;
   padding: 2rem;
+}
+
+.Footer-linkBucket {
+  width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: start;
+  color: #ffc734;
+}
+
+.Footer-logo {
+  width: 250px;
+}
+
+.Footer-link, .Footer-yellow, .Footer-white {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.Footer-yellow {
+  color: #ffc734;
+}
+
+.Footer-link .Footer-yellow {
+  padding-bottom: 0;
 }
 
 .MainContent {
