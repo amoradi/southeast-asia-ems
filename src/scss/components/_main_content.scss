@@ -3,9 +3,15 @@
   width: ($page-width / 8) * 6;
   padding: 0 2rem;
 
-  &-content {
-    width: (($page-width / 8) * 6) * (5/6);
+  &-content,
+  &-content--fullWidth {
+    width: calc(((#{$page-width} / 8) * 6) * (5/6) - 2rem);
     padding-bottom: 4rem;
+    overflow: hidden;
+  }
+
+  &-content--fullWidth {
+    width: auto;
   }
   
   &-date {
@@ -17,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    overflow: hidden;
+    width: initial;
   }
 
   &-issueSidebar {

@@ -1,0 +1,27 @@
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  &-item {
+    float: left;
+    width: 33%;
+  }
+
+  &-title {
+    font-weight: 800;
+    color: $black;
+  }
+
+  &-detail {
+    font-weight: 800;
+    color: gray;
+  }
+
+  @supports (display:grid) {
+    &-item {
+      float: none;
+      width: auto;
+    }
+  }
+}
