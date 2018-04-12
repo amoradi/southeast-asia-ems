@@ -1,36 +1,36 @@
 ul(class="Navigation-list")
-  li(class='Navigation-listItem')
+  li(class=`Navigation-listItem ${menuItem == 'current issue' ? ' is-active' : ''}`)
     a(
-      class=`Navigation-link ${menuItem == 'current issue' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/index.html'
     ) current issue
-  li(class='Navigation-listItem')
+  li(class=`Navigation-listItem ${menuItem == 'about' ? ' is-active' : ''}`)
     a(
-      class=`Navigation-link ${menuItem == 'about' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/about.html'
     ) about
-  li(class='Navigation-listItem') 
+  li(class=`Navigation-listItem ${menuItem == 'issues' ? ' is-active' : ''}`) 
     a(
-      class=`Navigation-link ${menuItem == 'issues' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/issues.html'
     ) issues
-  li(class='Navigation-listItem') 
+  li(class=`Navigation-listItem ${menuItem == 'media kit' ? ' is-active' : ''}`) 
     a(
-      class=`Navigation-link ${menuItem == 'media kit' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/media-kit.html'
     ) media kit
-  li(class='Navigation-listItem') 
+  li(class=`Navigation-listItem ${menuItem == 'videos' ? ' is-active' : ''}`) 
     a(
-      class=`Navigation-link ${menuItem == 'videos' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/videos.html'
     ) videos
-  li(class='Navigation-listItem') 
+  li(class=`Navigation-listItem ${menuItem == 'articles white papers' ? ' is-active' : ''}`) 
     a(
-      class=`Navigation-link ${menuItem == 'articles white papers' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/articles-white-papers.html'
     ) articles & white papers
-  li(class='Navigation-listItem') 
+  li(class=`Navigation-listItem ${menuItem == 'contact' ? ' is-active' : ''}`) 
     a(
-      class=`Navigation-link ${menuItem == 'contact' ? ' is-active' : ''}`,
+      class=`Navigation-link`,
       href='/contact.html'
     ) contact us

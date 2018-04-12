@@ -29,10 +29,17 @@
 
   &-issueSidebar {
     padding-left: 2rem;
+    width: 140px;
   }
 
   &-issueImage {
     width: 140px;
+  }
+
+  &-image {
+    width: 85%;
+    display: block;
+    margin: 2rem auto;
   }
 
   &-more,

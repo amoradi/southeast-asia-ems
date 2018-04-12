@@ -44,6 +44,8 @@ menuItem: 'articles white papers'
       p(class='is-hidden') For more information, contact Olaf Szarlan, marketing, at Viscom AG at Carl-Buderus-Straße 9-15 - 30455 Hannover; +49 511 94996-718; Email: #[a(href='mailto:olaf.szarlan@viscom.de') olaf.szarlan@viscom.de]; Web site: #[a(href='http://www.viscom.com', target='_blank') www.viscom.com].
 
       a(class='MainContent-less is-hidden') read less
+  .MainContent-issueSidebar
+    img(src='./assets/viscom.png', class='MainContent-issueImage')
 
 .MainContent-barrier
 .MainContent-issue
@@ -80,3 +82,122 @@ menuItem: 'articles white papers'
       p(class='is-hidden') #[strong(class='MainContent-emphasis') About the Author] Jim Angeloni is Chief Operating Officer, Aerospace and Defense Operations, at NEO Tech. Jim is a recognized expert in the field of microelectronic assembly, and as an innovator in the industry for more than 30 years, and as a charter member of the International Microelectronics and Packaging Society (IMAPS).
 
       a(class='MainContent-less is-hidden') read less
+  .MainContent-issueSidebar
+    img(src='./assets/neo-tech.png', class='MainContent-issueImage')
+
+.MainContent-barrier
+.MainContent-issue
+  .MainContent-issueBody
+    h2(class='Heading-secondary') Cleaning Fine Pitch Copper Pillar Flip Chip Packages
+    p(class='MainContent-date') Issue 1 | Mike Bixenman, KYZEN
+    div 
+      p(class='MainContent-copy') The miniaturization of modern electronics continues to challenge the effectiveness of common cleaning processes and the ability to obtain desired cleaning performance and optimal yield. When soldering the flip chip die to the ball grid array (BGA) interposer, water soluble paste fluxes are used to ensure a strong metallurgical bond. Ineffectiveness in removing flux residues can lead to contamination, underfill voiding, poor yield, and reliability issues in the field
+        span(class='MainContent-ellipse') ...
+        a(class='MainContent-more') read more
+
+      p(class='is-hidden') Devices utilizing copper pillar technology have more interconnects per surface area, which results in tighter pitch and lower standoff gaps. As standoff gaps lower, flux residues have less area to outgas during reflow. This results in more active residues under the die. A longer wash time using water with a low concentration of cleaning agent is typically required to properly clean die under these lower standoff gaps.
+
+      p(class='is-hidden') Aqueous saponified cleaning agents diluted in deionized (DI) water have commonly been used to remove flux residues under the flip chip bottom termination. Saponified cleaning agents are mildly alkaline to form an attractiveforce to the flux residue. However, alkaline cleaning agents can react, consume and corrode reactive metals. Longer time in the cleaning solution increases chemical attack, which can cause failures due to mechanical stresses.Potential metal incompatibilities and insufficient rinsing represent the most common challenges for engineering improved cleaning agents for cleaning Copper Pillar flip chip package
+
+      p(class='is-hidden') Current saponified cleaning solutions adversely react with many metals (Al, Cu, Sn, Ag, Ni, etc.) that are present on the Copper Pillar die. Especially, in alkaline solutions, Al is readily attacked causing galvanic corrosion reactions. Also, there is the potential for defects and discoloration on Cu and SAC alloys during the cleaning process. Crevice corrosion from cleaning solution reactions with exposed metals can weaken interconnects and reduce mean time to failure.
+
+      p(class='is-hidden') #[strong(class='MainContent-emphasis') COPPER PILLAR TECHNOLOGY]
+
+      p(class='is-hidden') Copper pillar bumping is a growing design trend in electronics packaging. Copper pillar technology offers many advantages in speed and line pitch. Building integrated circuits with copper and aluminum reduces the potential for electromigration while improving current carrying capacity. Likewise, copper pillar is more cost effective than Austud bumps for high bump designs. Finer pitch can be achieved, which translates into higher performance over a smaller surface area (Figure 1)
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 1. Copper Pillar
+
+      p(class='is-hidden') DesignUnlike the traditional bumping process, the copper pillar design exposes a number of reactive metals to the cleaning process. Many of these metals react and dissolve when exposed to saponified cleaning agents. Corrosion inhibitors can reduce, and in some cases, prevent this interaction. The challenge is designing cleaning agents that are effective at inhibiting the different exposed metals that the cleaning agent comes in contact with. If longer cleaning time is needed, the risk of metal interaction is greater. 
+
+      p(class='is-hidden') Aluminum is highly reactive when exposed to alkaline cleaning agents. Common saponified aqueous cleaning agents that are used to clean traditional bumped die work well. These cleaning agents are not suitable for cleaning Copper Pillar die due to their propensity to attack aluminum and copper. Aluminum is a diffusion barrier metal for copper. Common alkaline cleaning agents can attack, dissolve and crack the aluminum pad. Figure 2 is an example of how a traditional saponified cleaning agent attacks, corrodes and dissolves the aluminum pad.
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-2.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 2. Al pad Dissolves, Cracks and Turns White
+
+      p(class='is-hidden') Copper is also reactive when exposed to alkaline cleaning agents. Cleaning solutions with poor copper inhibition will tarnish and oxide the side of the copper pillar (Figure 3)
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-3.png", alt="kyzen")
+
+      p(class='is-hidden') Aluminum is highly reactive when exposed to alkaline cleaning agents. Common saponified aqueous cleaning agents that are used to clean traditional bumped die work well. These cleaning agents are not suitable for cleaning Copper Pillar die due to their propensity to attack aluminum and copper. Aluminum is a diffusion barrier metal for copper. Common alkaline cleaning agents can attack, dissolve and crack the aluminum pad. Figure 2 is an example of how a traditional saponified cleaning agent attacks, corrodes and dissolves the aluminum pad.  Figure 2. Al pad Dissolves, Cracks and Turns White Copper is also reactive when exposed to alkaline cleaning agents. Cleaning solutions with poor copper inhibition will tarnish and oxide the side of the copper pillar (Figure 3).Figure 3. Copper Pillar Oxidation Nickel functions as the intermetallic layer between the copper pillar and SAC 305 alloy. Cleaning agents high in alkalinity have been shown to undercut the copper/nickel adhesion layer (Figure 4)
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-4.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 4. Nickel Adhesion Layer Undercut  SAC 305 alloy can pit and darken when exposed to highly alkaline cleaning agents. Longer exposure time increases the interaction (Figure 5). 
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-5.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 5. Solder Alloy Pitting  The problem is that cleaning agents that react with the exposed metals results in various forms of pitting, galvanic and crevice corrosion. The corrosion effect not only effects electrical performance but also reduces adhesion. Weakened intermetallic layers compromise the integrity of the copper pillar design. 
+
+      p(class='is-hidden') #[strong(class='MainContent-emphasis') Balanced Cleaning Agent Design] A well-designed cleaning agent must be capable of removing process residues without causing material compatibility issues. The jobs of the flux engineered into solder pastes, paste fluxes and liquid fluxes are many.
+
+      p(class='is-hidden')
+        ul(class='is-hidden')
+          li Remove oxide layer from pad and solder alloy
+          li Protect solderable surfaces during reflow 
+          li Consume the flux just as the solder begins to melt
+          li Active at 130°C for SnPb and 150°C for SAC
+          li Remain active for 90-120 seconds
+          li Leave a benign residue
+          li A residue that repels (hydrophobic) moisture
+          li Provides excellent solderability
+          li Reduces other defects such as head-in-pillow, graping and bridging
+        
+      p(class='is-hidden') Engineered water-soluble paste fluxes are used to join the interposer with the copper pillar preformed bumps. The flux removes oxide layers from the solder cap and placement pads. During solder reflow, the flux improves wetting to enable a strong metallurgical bond from the flip chip die to the substrate. During reflow, the flux residue will accumulate under the die and feature out near the edge of the die. At the edge of the die, flux can become depleted to the point where water only is insufficient to clean the edge of the die (Figure 6).
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-6.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 6. Flux depletion at the edge of the die Alkaline saponified cleaning agents commonly are used at low concentrations in DI Water, ranging from 3-8 percent to improve wetting and removal of charred water soluble flux residues. An alkalline cleaning agent exhibits a strong intermolecular force for the water soluble flux residue. This cleaning agent design worked well when cleaning a traditional bumped die that only exposed the SAC alloy to the cleaning process. As illustrated in the introduction section of this article, these alkaline cleaning agents are highly reactive to other exposed metals that make up the Cu Pillar design.
+
+      p(class='is-hidden') An effective cleaning process requires both chemical and mechanical forces to rapidly clean the Flip Chip – BGA package. The packages are placed in a fixture and cleaned at high throughput rates through the cleaning process (Figure 7). If either the chemical or mechanical forces are not balanced, parts will exit the cleaner with resdiue remaining, which impact yields. The job of the cleaning agent is critical in that it must rapidly wet and dissolve flux residues quickly. Other critical properties are materials compatibility, in the case of the Cu Pillar with exposed metals, and low foaming.
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-7.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 7: Cleaning Process Illustration If the exposed metals on the Cu Pillar are contacted with a cleaning solution that reacts with a metal, metal ions will be lost from the metal into the aqueous cleaning solution, leaving electrons behind on the metal. A metal that is attacked by the cleaning solution loses some of the metal electrons through a half cell electrochemical oxidation. The aqueous cleaning agent solution where metal electrons are gained is the reduction electrochemical half cell. A number of issues can occur, such as deformation, cracking and weakened bonds. When exposed to mechanical stresses, the package can cause an in-field failure.  A balanced cleaning agent must work as well as the traditional alkaline cleaning agent for cleaning Cu Pillar die. One approach is to design a cleaning agent that is neither alkaline or acidic. The intermolecular cleaning forces using a neutral cleaning agent will not form as strong of an attraction to the flux residue. To overcome this issue, the cleaning agent can be build with functional additivies that dissolve instead of saponifying the residue. Potential tradeoffs when cleaning a water soluble residue are bath life due to a pH shift into the acidic range, higher operating concentration to clean the residue and poorer rinsing effects. This option provides better materials compatibility on Cu Pillar expsed metals but gives up some of the cleaning performance that has commonly been experienced with alkalline cleaning agents.
+
+      p(class='is-hidden') A truly balanced cleaning agent has the chemical forces needed to remove the flux residues without giving up on the common benefits found with the traditional alkaline cleaning agents. The engineered cleaning composition requires the following properties: 
+
+      p(class='is-hidden')
+        ul(class='is-hidden') 
+          li Solvents and activators that provide dispersion and intermolecullar forces of attraction
+          li Both polar and non-polar solvents needed
+            ul
+              li Non-polar solvent to facilitate dissolution of resin and rosin polymeric soils
+                ul
+                  li Polar activators to induce both Van der Waals and London Dispersive Forces
+          li Low surface tension to penetrate low standoff gaps
+          li Low foaming under pressure
+          li Broad material compatibility
+            ul
+              li Mixed metals 
+              li Plastics
+              li Part markings
+              li Board laminants
+              li Bonding and stacking materials
+
+      p(class='is-hidden') The next-generation cleaning agent designed to clean Cu Pillar die is formulated to rapidly clean water soluble flux residues and to not interact (attack) exposed metals. The cleaning agent is mildly alkaline to provide needed intermolecular forces of attraction. This feature provides excellent cleaning, holding the soil in the cleaning agent, improved rinsing and long bath life by stabilizing the pH as flux accumulates into the wash bath. Figure 8 illustrates this point. Notice how the Aqueous 7 pH drops as the bath loads with flux. This pH drops affects both cleaning and rinsing. Aqueous 8 is a truly balanced cleaning agent that cleans well, holds the soil and does not attack metallization.  
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-8.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 8. Cleaning agent pH as a function of bath loading  The SEM image of the CuPillar die exposed to the next balance cleaning agent design shows to no material effects to the exposed metals (Figure 9). The balanced cleaning agents hits the design criteria of both cleaning and protecting the CuPillar die. Some alkaline builder is used to achieve high performance cleaning while addressing the tradoffs. The cleaning agent is a dropin to the current process with comparable performance at the designed concentration, temperature, throughput and mechanical impingment settings. The cleaning agent has no foam issues when sprayed at high impingment energy. The product rinses cleanly with DI water. 
+
+      p(class='is-hidden')
+        img(class="MainContent-image", src="./assets/kyzen-9.png", alt="kyzen")
+
+      p(class='is-hidden') Figure 9. Next-Generation Cleaning Agent that does not attack exposed metals.  Summary Copper Pillar flip chip has moved into a market leading position due to the ability to reduce pitch and increase I/O. Improperly cleaned devices can result in poor interfacial bond strengths, electrochemical migration and failures at the interconnect. Cleaning the package following assembly is defined and a common practice.  Traditional alkaline cleaning agents attack exposed metals on the CuPillar design. This quaility issue can result in-field failures. A next-generation balanced cleaning agent design that is a drop replacement for the current alkaline cleaning agents was needed. These cleaning agent designs do not materially attack the exposed metals on the CuPillar design. They are a drop in replacement for the traditional alkaline cleaning agents with no performance drop off.
+
+      p(class='is-hidden') For more information, contact Mike Bixenman, DBA, at KYZEN, 430 Harding Industrial Dr., Nashville, TN 37211; 615-831-0888; Web site: #[a(href='http://www.kyzen.com', target='_blank') www.kyzen.com].
+
+      a(class='MainContent-less is-hidden') read less 
+  .MainContent-issueSidebar
+    img(src='./assets/logo-kyzen.png', class='MainContent-issueImage')

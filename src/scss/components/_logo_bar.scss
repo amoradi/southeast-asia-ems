@@ -1,8 +1,9 @@
 .LogoBar {
   background-color: $yellow;
-  height: $logo-height;
+  height: $logo-height - 2px;
   margin: 0;
   border-top: $border-height solid $white;
+  overflow: hidden;
 
   &-body {
     background-color: $white;

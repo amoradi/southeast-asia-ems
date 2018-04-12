@@ -8,7 +8,7 @@
     position: relative;
   }
 
-  li:first-child:after {
+  li:first-child:before {
     content: '';
     position: absolute;
     display: block;
@@ -17,7 +17,8 @@
     height: 100%;
     width: 1px;
     background-color: $white;
-    left: 0;
+    left: -1px;
+    z-index: 1;
   }
 
   &-body {
@@ -34,6 +35,19 @@
     list-style-type: none;
     display: inline;
     float: left;
+    position: relative;
+  }
+
+  &-listItem.is-active:after {
+    bottom: -6px;
+    left: 0;
+    right: 1px;
+    content: "";
+    background: $yellow;
+    position: absolute;
+    display: block;
+    height: 6px;
+    width: calc(100% - 1px);
   }
 
   &-link {
@@ -62,7 +76,7 @@
     right: 0;
   }
 
-  &-link.is-active:before {
+  &-listItem.is-active &-link:before {
     content: '';
     position: absolute;
     display: block;
@@ -74,13 +88,13 @@
     background-color: $yellow;
   }
 
-  li:first-child &-link.is-active:before {
-    left: 1px;
+  li.is-active:first-child &-link:before {
+    left: 0;
+    width: calc(100% - 1px);
   }
 
-  &-link.is-active {
+  &-listItem.is-active &-link {
     background-color: $yellow;
-    border-bottom: 0.4rem $yellow solid;
     color: $black;
   }
 }

@@ -32,7 +32,7 @@ html {
   position: relative;
 }
 
-.Navigation li:first-child:after {
+.Navigation li:first-child:before {
   content: '';
   position: absolute;
   display: block;
@@ -41,7 +41,8 @@ html {
   height: 100%;
   width: 1px;
   background-color: white;
-  left: 0;
+  left: -1px;
+  z-index: 1;
 }
 
 .Navigation-body {
@@ -58,6 +59,19 @@ html {
   list-style-type: none;
   display: inline;
   float: left;
+  position: relative;
+}
+
+.Navigation-listItem.is-active:after {
+  bottom: -6px;
+  left: 0;
+  right: 1px;
+  content: "";
+  background: #ffc734;
+  position: absolute;
+  display: block;
+  height: 6px;
+  width: calc(100% - 1px);
 }
 
 .Navigation-link {
@@ -86,7 +100,7 @@ html {
   right: 0;
 }
 
-.Navigation-link.is-active:before {
+.Navigation-listItem.is-active .Navigation-link:before {
   content: '';
   position: absolute;
   display: block;
@@ -98,21 +112,22 @@ html {
   background-color: #ffc734;
 }
 
-li:first-child .Navigation-link.is-active:before {
-  left: 1px;
+li.is-active:first-child .Navigation-link:before {
+  left: 0;
+  width: calc(100% - 1px);
 }
 
-.Navigation-link.is-active {
+.Navigation-listItem.is-active .Navigation-link {
   background-color: #ffc734;
-  border-bottom: 0.4rem #ffc734 solid;
   color: #222;
 }
 
 .LogoBar {
   background-color: #ffc734;
-  height: 100px;
+  height: 98px;
   margin: 0;
   border-top: 0.4rem solid white;
+  overflow: hidden;
 }
 
 .LogoBar-body {
@@ -217,10 +232,17 @@ li:first-child .Navigation-link.is-active:before {
 
 .MainContent-issueSidebar {
   padding-left: 2rem;
+  width: 140px;
 }
 
 .MainContent-issueImage {
   width: 140px;
+}
+
+.MainContent-image {
+  width: 85%;
+  display: block;
+  margin: 2rem auto;
 }
 
 .MainContent-more, .MainContent-less {
@@ -384,7 +406,7 @@ li:first-child .Navigation-link.is-active:before {
 
 .Menu-list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 1rem 0 0;
   margin: 0;
 }
 
