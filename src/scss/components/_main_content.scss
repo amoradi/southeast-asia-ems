@@ -77,11 +77,12 @@
   }
 
   &-issue.is-animating p.is-hidden,
-  &-issue.is-open p.is-hidden {
+  &-issue.is-open p.is-hidden,
+  &-issue.is-open ul.is-hidden {
     display: block;
   }
 
-  &-issue.is-animating  &-less,
+  &-issue.is-animating &-less,
   &-issue.is-open &-less {
     display: block;
     margin: 1rem 0;

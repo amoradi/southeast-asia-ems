@@ -283,7 +283,8 @@ li.is-active:first-child .Navigation-link:before {
 }
 
 .MainContent-issue.is-animating p.is-hidden,
-.MainContent-issue.is-open p.is-hidden {
+.MainContent-issue.is-open p.is-hidden,
+.MainContent-issue.is-open ul.is-hidden {
   display: block;
 }
 
